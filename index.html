@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body id="body" class="body">
+
+    <script >
+        let values = [11,82,43,24,65,56,64,32,67,22];
+        function getValue(){
+            let element = document.getElementById('value').value
+            if(element < values.length ){
+                alert(values[element])
+            }else{
+                alert('please enter valid value')
+            }
+        }
+    </script>
+</body>
+    <input type="text" id="value">
+    <button onclick="getValue()">
+        Get Value
+    </button>
+</html>
